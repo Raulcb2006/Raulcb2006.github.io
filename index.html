@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raul Cini Bamban | Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: #e5e7eb;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ===== HEADER CENTRALIZADO CORRETAMENTE ===== */
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+header > div {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header span {
+  color: #38bdf8;
+}
+
+header p {
+  margin: 20px auto;
+  font-size: 1.2rem;
+}
+
+/* ===== BOTÃO ===== */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #0ea5e9;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 80px 10%;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.about,
+.skills,
+.timeline {
+  max-width: 900px;
+  margin: auto;
+}
+.about p {
+    font-size: 20px;
+}
+/* ===== CARDS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #020617;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #020617;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* ===== MODO CLARO ===== */
+body.light {
+  background: #f8fafc;
+  color: #020617;
+}
+
+body.light h2 {
+  color: #0284c7;
+}
+
+body.light .card {
+  background: #ffffff;
+  color: #020617;
+}
+
+body.light a {
+  color: #0284c7;
+}
+
+body.light footer {
+  background: #e5e7eb;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Olá, eu sou <span>Raul Cini Bamban</span></h1>
+    <p>Estudante de Desenvolvimento de Sistemas, apaixonado por tecnologia, aprendizado constante e criação de soluções digitais.</p>
+    <a href="#sobre" class="btn">Conheça meu trabalho</a>
+  </div>
+</header>
+
+<section id="sobre">
+  <div class="about">
+    <h2>Sobre mim</h2>
+    <p><p>
+  Desenvolvedor em formação, técnico em Desenvolvimento de Sistemas e atualmente
+  graduando pela Fatec Ipiranga. Busco minha primeira oportunidade como estagiário
+  ou desenvolvedor júnior, com foco em aplicar na prática os conhecimentos adquiridos
+  em projetos acadêmicos e reais. Tenho interesse em aprender continuamente,
+  trabalhar em equipe e desenvolver soluções organizadas, funcionais e bem estruturadas.
+</p>
+</p>
+  </div>
+</section>
+
+<section>
+  <div class="skills">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="card">Lógica de Programação</div>
+      <div class="card">Python (POO)</div>
+      <div class="card">Banco de Dados</div>
+      <div class="card">Design de Interface</div>
+      <div class="card">Trabalho em Equipe</div>
+      <div class="card">Uso de Inteligência Artificial</div>
+      <div class="card">Proatividade & Organização</div>
+      <div class="card">Empatia</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="timeline">
+    <h2>Formação & Experiência</h2>
+    <div class="timeline-item">
+      <strong>Fatec Ipiranga</strong> – Graduação em Desenvolvimento de Sistemas (2025 - 2027)
+    </div>
+    <div class="timeline-item">
+      <strong>Etec Heliópolis</strong> – Técnico em Desenvolvimento de Sistemas (2022 - 2024)
+    </div>
+    <div class="timeline-item">
+      <strong>Exército Brasileiro</strong> – Informática (2025)<br>
+      Suporte a sistemas, criação de contas e resolução de problemas de rede e acesso.
+    </div>
+  </div>
+</section>
+<section>
+  <div class="about">
+    <h2>Projetos</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3>TCC – Site para ONG</h3>
+        <p>Projeto de conclusão do curso técnico. Desenvolvimento de um sistema web integrado a um site institucional, permitindo que o administrador cadastre e gerencie projetos que são exibidos dinamicamente no site da ONG.</p>
+        <a href="https://github.com/Raulcb2006" target="_blank">Ver repositório</a>
+      </div>
+      <div class="card">
+        <h3>PI – Sistema para UBS</h3>
+        <p>Projeto Integrador em desenvolvimento na Fatec. Sistema voltado para Unidades Básicas de Saúde, com cadastro de médicos, pacientes e gerenciamento de consultas, focado em organização e eficiência no atendimento.</p>
+        <a href="https://github.com/Raulcb2006" target="_blank">Ver repositório</a>
+      </div>
+      <div class="card">
+        <h3>Fábrica de Software</h3>
+        <p>Site institucional para uma empresa fictícia de tecnologia, desenvolvido com páginas simples, layout profissional e foco em apresentação de serviços e identidade visual.</p>
+        <a href="https://github.com/Raulcb2006" target="_blank">Ver repositório</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>📧 raulcbamban@gmail.com | 📱 (11) 98557-4470</p>
+  <p>
+    <a href="https://github.com/Raulcb2006" target="_blank">GitHub</a>
+  </p>
+</footer>
+
+<script>
+  const btn = document.createElement('button');
+  btn.innerText = '🌙 / ☀️';
+  btn.style.position = 'fixed';
+  btn.style.bottom = '20px';
+  btn.style.right = '20px';
+  btn.style.padding = '12px 14px';
+  btn.style.borderRadius = '50%';
+  btn.style.border = 'none';
+  btn.style.cursor = 'pointer';
+  btn.style.background = '#38bdf8';
+  btn.style.fontSize = '16px';
+  document.body.appendChild(btn);
+
+  btn.onclick = () => {
+    document.body.classList.toggle('light');
+  };
+</script>
+
+
+</body>
+</html>
